@@ -1,0 +1,188 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    
+    align-items:center;
+    justify-content:center; 
+    display:flex;
+    height:100vh;
+    background:darkslategray;
+    overflow:hidden;
+    
+}
+span{
+    
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    left:50%; 
+    transform:translate(-25%, -25%);   
+    border-radius:50%;
+} 
+
+.sun{
+    height:38px;
+    width:38px;
+    background:yellow;
+    z-index:9999; 
+    transform:translate(-3%, 8%); 
+}
+.planet{
+    background:transparent;  
+    border:1px solid white;
+}
+.planet1{
+    height:90px;
+    width:90px;
+    position:absolute;
+    left:-28px;
+    top:-23px;
+    animation:animation 1.5s linear infinite;
+    
+} 
+.planet2{
+    height:167.5px;
+    width:167.5px;
+    position:absolute;
+    left:-68px;
+    top:-63.5px;
+    animation:animation 3.5s linear infinite;
+} 
+.planet3{
+    height:245px;
+    width:245px;
+    position:absolute;
+    left:-106.5px;
+    right:88px;
+    top:-103px;
+    animation:animation 5s linear infinite;
+} 
+.planet4{
+    height:322.5px;
+    width:322.5px;
+    position:absolute;
+    left:-145.5px;
+    top:-143px;
+    animation:animation 7.5s linear infinite;
+}   
+.planet5{
+    height:405px;
+    width:405px;
+    position:absolute;
+    left:-187px;
+    top:-187.5px;
+    animation:animation 26s linear infinite;
+}  
+.planet6{
+    height:482.5px;
+    width:482.5px;
+    position:absolute;
+    left:-226px;
+    top:-227px;
+    animation:animation 47.5s linear infinite;
+}  
+.planet7{
+    height:543px;
+    width:543px;
+    position:absolute;
+    left:-256px;
+    top:-258px;
+    animation:animation 95s linear infinite;
+}  
+.planet8{
+    height:622.5px;
+    width:622.5px;
+    position:absolute;
+    left:-296px;
+    top:-297.5px;
+    animation:animation 150s linear infinite;
+} 
+.planet9{
+    height:700px;
+    width:700px;
+    position:absolute;
+    left:-336px;
+    top:-336px;
+    animation:animation 190s linear infinite;
+}  
+span::before,span::after{
+    content:''; 
+    position:absolute;
+    background:#fff;
+    border-radius:50%;
+}
+.planet1::before{
+    width:6px;
+    height:6px;
+    background:orangered;
+    bottom:71.75px;
+    left:9px; 
+} 
+.planet2::before{
+    width:8px;
+    height:8px;
+    background:red;
+    bottom:13px;
+    left:0px; 
+    top:107.5px;
+}
+.planet3::before{
+    width:16px;
+    height:16px;
+    background:blue;
+    bottom:13px;
+    left:44.5px; 
+}
+.planet4::before{
+    width:14px;
+    height:14px;
+    background:magenta;
+    bottom:13px;
+    left:73.5px; 
+}
+.planet5::before{
+    width:20px;
+    height:20px;
+    background:lightgreen;
+    bottom:13px;
+    left:101px; 
+}
+.planet6::before{
+    width:18px;
+    height:18px;
+    background:darkslateblue;
+    bottom:13px;
+    left:130px; 
+}
+.planet7::before{
+    width:12px;
+    height:12px;
+    background:yellowgreen;
+    bottom:13px;
+    left:166px; 
+} 
+.planet8::before{
+    width:13px;
+    height:13.5px;
+    background:orangered;
+    bottom:13.5px;
+    left:192.5px; 
+}
+.planet9::before{
+    width:4px;
+    height:4px;
+    background:magenta;
+    bottom:13px;
+    left:244px; 
+}
+@keyframes animation{
+    0%{
+        transform:rotate(0deg);
+    } 
+    100%{
+        transform:rotate(-360deg);
+    }
+}
